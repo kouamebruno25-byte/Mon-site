@@ -1,6 +1,9 @@
 :root {
     --primary: #007bff;
     --dark: #333;
+  html {
+    scroll-behavior: smooth;
+}
 }
 
 body {
