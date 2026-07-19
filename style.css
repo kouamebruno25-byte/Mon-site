@@ -24,14 +24,25 @@ body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
 /* Bouton retour en haut */
 #btn-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     display: none;
-    padding: 10px 15px;
-    background-color: #007bff;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: white;
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#btn-top:hover {
+    transform: scale(1.1) rotate(360deg);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
 }
 
