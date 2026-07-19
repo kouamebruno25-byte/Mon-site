@@ -13,3 +13,22 @@ elements.forEach(el => {
     });
 });
 
+const btnTop = document.getElementById('btn-top');
+
+// Afficher/Cacher le bouton selon le scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        btnTop.style.display = "block";
+    } else {
+        btnTop.style.display = "none";
+    }
+});
+
+// Action au clic : remonter en haut
+btnTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
