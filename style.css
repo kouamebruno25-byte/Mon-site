@@ -48,3 +48,9 @@ body {
     margin-top: 20px;
 }
 
+.clique-effet {
+    transform: scale(0.95);
+    color: #007bff;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+

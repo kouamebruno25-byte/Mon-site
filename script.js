@@ -1,19 +1,15 @@
-// On sélectionne tous les liens du menu ET le bouton principal
-const tousLesBoutons = document.querySelectorAll('.nav-links a, .cta-button');
+// On sélectionne tous les éléments cibles
+const elements = document.querySelectorAll('.nav-links a, .cta-button');
 
-tousLesBoutons.forEach(bouton => {
-    bouton.addEventListener('click', function() {
-        // Applique l'effet de couleur
-        this.style.color = "#007bff"; 
+elements.forEach(el => {
+    el.addEventListener('click', function() {
+        // Ajoute la classe CSS pour l'animation
+        this.classList.add('clique-effet');
         
-        // Applique une petite animation de réduction (effet "clic")
-        this.style.transform = "scale(0.95)";
-        
-        // Remet tout à la normale après 300ms
+        // Retire la classe après 200ms pour que l'effet disparaisse
         setTimeout(() => {
-            this.style.color = ""; // "" permet de revenir à la couleur définie dans le CSS
-            this.style.transform = "scale(1)";
-        }, 300);
+            this.classList.remove('clique-effet');
+        }, 200);
     });
 });
 
