@@ -1,57 +1,24 @@
-:root {
-    --primary: #007bff;
-    --dark: #333;
-}
+/* Style de base */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+.section { padding: 40px 20px; text-align: center; }
 
-  html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: sans-serif;
-    margin: 0;
-    line-height: 1.6;
-}
-
-.navbar {
+/* Conteneur des cartes */
+.projets-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--dark);
-}
-
-.hero, .section {
-    padding: 50px 10%;
-    text-align: center;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background: var(--primary);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
     margin-top: 20px;
 }
 
-.clique-effet {
-    transform: scale(0.95);
-    color: #007bff;
-    transition: transform 0.2s ease, color 0.2s ease;
+/* Carte individuelle */
+.projet-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 /* Bouton retour en haut */
@@ -66,30 +33,5 @@ body {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 18px;
-    z-index: 1000;
-}
-
-.projets-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    padding: 20px;
-}
-
-.projet-card {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.projet-card:hover {
-    transform: translateY(-5px);
 }
 
